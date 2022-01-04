@@ -14,9 +14,14 @@
 		F4908BAA2782544800F06E94 /* TimeVisualizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4908BA82782544800F06E94 /* TimeVisualizer.xcdatamodeld */; };
 		F4908BAC2782545200F06E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4908BAB2782545200F06E94 /* Assets.xcassets */; };
 		F4908BAF2782545200F06E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4908BAD2782545200F06E94 /* LaunchScreen.storyboard */; };
+		F4908BB72782732400F06E94 /* GraphicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4908BB62782732400F06E94 /* GraphicViewController.swift */; };
+		F67C9F0FABEBE9A0220F60D2 /* Pods_TimeVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544DBCB46B7614D70B579543 /* Pods_TimeVisualizer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		544DBCB46B7614D70B579543 /* Pods_TimeVisualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5149C287C74E755409A778 /* Pods-TimeVisualizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeVisualizer.debug.xcconfig"; path = "Target Support Files/Pods-TimeVisualizer/Pods-TimeVisualizer.debug.xcconfig"; sourceTree = "<group>"; };
+		E21A72177CD2ABBF2C8908FD /* Pods-TimeVisualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeVisualizer.release.xcconfig"; path = "Target Support Files/Pods-TimeVisualizer/Pods-TimeVisualizer.release.xcconfig"; sourceTree = "<group>"; };
 		F4908B9C2782544800F06E94 /* TimeVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4908B9F2782544800F06E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4908BA12782544800F06E94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		F4908BAB2782545200F06E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4908BAE2782545200F06E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4908BB02782545200F06E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4908BB62782732400F06E94 /* GraphicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67C9F0FABEBE9A0220F60D2 /* Pods_TimeVisualizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1802537BBA5AB333F179AF24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD5149C287C74E755409A778 /* Pods-TimeVisualizer.debug.xcconfig */,
+				E21A72177CD2ABBF2C8908FD /* Pods-TimeVisualizer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED63D3B9E4206E504FDBE03F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				544DBCB46B7614D70B579543 /* Pods_TimeVisualizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4908B932782544700F06E94 = {
 			isa = PBXGroup;
 			children = (
 				F4908B9E2782544800F06E94 /* TimeVisualizer */,
 				F4908B9D2782544800F06E94 /* Products */,
+				1802537BBA5AB333F179AF24 /* Pods */,
+				ED63D3B9E4206E504FDBE03F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +87,7 @@
 				F4908B9F2782544800F06E94 /* AppDelegate.swift */,
 				F4908BA12782544800F06E94 /* SceneDelegate.swift */,
 				F4908BA32782544800F06E94 /* ViewController.swift */,
+				F4908BB62782732400F06E94 /* GraphicViewController.swift */,
 				F4908BA52782544800F06E94 /* Main.storyboard */,
 				F4908BAB2782545200F06E94 /* Assets.xcassets */,
 				F4908BAD2782545200F06E94 /* LaunchScreen.storyboard */,
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4908BB32782545200F06E94 /* Build configuration list for PBXNativeTarget "TimeVisualizer" */;
 			buildPhases = (
+				2A0C6AC7B712BA812DACD343 /* [CP] Check Pods Manifest.lock */,
 				F4908B982782544800F06E94 /* Sources */,
 				F4908B992782544800F06E94 /* Frameworks */,
 				F4908B9A2782544800F06E94 /* Resources */,
+				A106694F1FE1D060BE0E8CD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A0C6AC7B712BA812DACD343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeVisualizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A106694F1FE1D060BE0E8CD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeVisualizer/Pods-TimeVisualizer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeVisualizer/Pods-TimeVisualizer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeVisualizer/Pods-TimeVisualizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4908B982782544800F06E94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -143,6 +214,7 @@
 			files = (
 				F4908BAA2782544800F06E94 /* TimeVisualizer.xcdatamodeld in Sources */,
 				F4908BA42782544800F06E94 /* ViewController.swift in Sources */,
+				F4908BB72782732400F06E94 /* GraphicViewController.swift in Sources */,
 				F4908BA02782544800F06E94 /* AppDelegate.swift in Sources */,
 				F4908BA22782544800F06E94 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,6 +360,7 @@
 		};
 		F4908BB42782545200F06E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5149C287C74E755409A778 /* Pods-TimeVisualizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +388,7 @@
 		};
 		F4908BB52782545200F06E94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21A72177CD2ABBF2C8908FD /* Pods-TimeVisualizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
